@@ -1,0 +1,103 @@
+# Comandos
+
+### Configuración de Git
+
+```bash
+# Para ver la version de git
+git version
+
+# Para configurar tu git
+	# Con tu mail
+	git config --global user.name "Nombre"
+	git config --global user.email "mail@mail.com"
+
+	#Con tu cuenta de GitHub
+	git config --global user.name  "usuario_github"
+	git config --global user.email "mail_de_github@mail.com"
+
+# Para ver la configuracion de git
+git config --list
+
+# Para crear un repositorio desde donde estoy
+git init
+
+# Para vincular el repositorio remoto con el local
+git remote add origin (nombre identificativo de acceso directo al repo) <enlace de git al crear un repo nuevo>
+
+# Cambiar el nombre de la rama principal de "master" a "main"
+git branch -m master main
+
+# Para clonar un repositorio
+git clone direccion-url
+```
+
+### Comandos de Git básicos
+
+```bash
+# Para subir archivos al repositorio
+git add . o git add nombre_archivo.formato # Para poner los cambios en el staging area
+git rm --catched nombre_archivo # Si por error hemos puesto cambios 
+# de un archivo que no queremos en el staging area, lo eliminamos así
+git commit -m "Comentario acerca del cambio" # Para subir al repositorio local los cambios
+
+# Para crear una nueva rama:
+git branch nueva-rama
+
+# Para ver un listado de tus ramas en local
+git branch
+
+# Para subir la rama creada al repositorio remoto
+git push origin (ENLACE GIT) develop-branch 
+
+# Para ver un listado de tus ramas locales y remotas
+git branch -a
+
+# Para fusionar dos ramas (ESTANDO EN LA RAMA DE DESTINO)
+git merge rama-origen
+
+# Para subir cambios de una rama a Github 
+git push origin nombre-rama
+git push -u origin nombre-rama # para enlazar nuestra rama local con la remota
+
+# Para cambiar de rama 
+git checkout nombre-rama
+
+# Para borrar una rama
+git branch -d nombre-rama
+
+# Para borrar una rama remota
+git push origin --delete rama-a-borrar
+
+################### GIT MERGE #######################
+
+# Para fusionar dos ramas (ESTANDO EN LA RAMA DE DESTINO)
+git merge rama-origen
+
+# Para crear una Pull Request
+### HAZLO DESDE GITHUB, TEN CUIDADO AL SELECCIONAR LA RAMA ORIGEN Y LA RAMA DESTINO
+
+# SI ENCUENTRAS CONFLICTO, DEBES SOLUCIONARLO EN UN EDITOR DE TEXTO COMO, POR EJEMPLO, VISUAL STUDIO CODE
+
+```
+
+### Restaurar commits anteriores (solución de cagadas)
+
+```bash
+# Para devolver un archivo a su estado inicial porque no queremos guardar los cambios realizados
+git checkout nombre_archivo
+
+# Para localizar los hash de los commit anteriores
+git log
+
+########## hay 3 formas de restaurar un estado o commit anterior############
+# soft  vuelve al commit anterior dejando los cambios en la staging area
+git reset --soft ce3276f9e808 (valor hash del commit al que queremos ir)
+
+# mixed  vuelve al commit anterior dejando los cambios en la staging area
+git reset --mixed ce3276f9e808 (valor hash del commit al que queremos ir)
+
+# hard borra el commit anterior pero se pierden las modificaciones en los archivos
+git reset --hard ce3276f9e808 (valor hash del commit al que queremos ir)
+```
+
+### Pasar un commit de una rama a otra

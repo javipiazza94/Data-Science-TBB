@@ -1,0 +1,16 @@
+#Carpetas
+**/data/
+**/img/
+**/.vscode/
+**/venv/
+*.ipynb_checkpoints/
+
+#Archivos
+2-Data Analytics/3-Pandas/ejercicios/1-World_Food_Facts/data.tsv
+**/__py_cache__/
+**/log/
+**/logs/
+THE_BRIDGE_DS_BC/2-Data Analytics/4-Pandas/Ejercicios/1-World_Food_Facts/data/en.openfoodfacts.org.products.csv
+
+
+

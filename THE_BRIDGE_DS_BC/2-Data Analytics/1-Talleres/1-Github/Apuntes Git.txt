@@ -1,0 +1,27 @@
+## Git y GitHub
+
+- **Diferencia entre Git y GitHub**
+    
+    La diferencia principal entre **Git** y **GitHub** es que **Git** es el sistema de control de versiones que permite a los desarrolladores administrar los cambios en un software a la vez que el proyecto evoluciona, mientras que **GitHub** es un servicio de alojamiento de repositorios en línea al que los desarrolladores, a través de **Git,** pueden conectarse y cargar o descargar recursos. 
+    
+    ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76d8cb41-b5a9-4442-b138-ec954b98c56f/Untitled.png)
+    
+- **Qué es un repositorio. Tipos.**
+    
+    Un **repositorio** es una ubicación (local o en línea) que contiene todos los archivos de un proyecto.
+    
+    - **Repositorio Local:** aquel que solo es visible a través de tu ordenador. Es básicamente una carpeta en tu ordenador con algunas funcionalidades.
+    - **Repositorio Remoto:** Aquel que se encuentra en servidores web como GitHub o GitLab, que puede ser visible e, incluso, editable por varios usuarios.
+- **Creación de un repositorio. Creación de ramas.**
+- **Invitación de colaboradores**
+- **Subida de archivos. Pull Request**
+
+## Estructura básica de un proyecto con Git
+
+Un repositorio de GitHub está compuesto por diversas ramas que, a su vez, se encuentran a varios niveles, cada uno de ellas con una relación padre-hijo.
+
+- **MAIN:** Rama principal del repositorio. El resultado final del proyecto debe ir en ella.
+- **RAMAS SECUNDARIAS**. A continuación se describe un ejemplo:
+    - **DEVELOP**: Justo por debajo de la rama MAIN. Donde se va a llevar a cabo el desarrollo.
+    - **EPIC**: Cada uno de los hitos o partes del proyecto
+    - **TICKET**: Cada una de las subtareas del proyecto
