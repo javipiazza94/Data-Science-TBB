@@ -1,0 +1,11 @@
+[submodule "SCRIPTS/Proyectos/ATP_Tennis_Data_Analysis"]
+	path = SCRIPTS/Proyectos/ATP_Tennis_Data_Analysis
+	url = git@github.com:javipiazza94/ATP_Tennis_Data_Analysis.git
+
+[submodule "SCRIPTS/Proyectos/Prediccion_poblacion_mundial"]
+	path = SCRIPTS/Proyectos/Prediccion_poblacion_mundial
+	url = git@github.com:javipiazza94/World_Pop_Analysis.git
+
+[submodule "THE_BRIDGE_DS_BC/TBS-Ejercicios-Javier-Puente-Piazza"]
+	path = THE_BRIDGE_DS_BC/TBS-Ejercicios-Javier-Puente-Piazza
+	url = git@github.com:javipiazza94/TBS-Ejercicios-Javier-Puente-Piazza.git

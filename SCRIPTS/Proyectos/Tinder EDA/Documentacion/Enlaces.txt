@@ -1,0 +1,40 @@
+DOCUMENTACIÓN Y FUENTES
+
+Data Dive - Tinder Statistics: Insights from Unique Dataset
+Enlace --> https://data-dive.com/tinder-statistics-insights-from-unique-dataset/
+
+Business of Apps - Bumble Statistics
+Enlace --> https://www.businessofapps.com/data/bumble-statistics/
+
+Business of Apps - Tinder Statistics
+Enlace --> https://www.businessofapps.com/data/tinder-statistics/
+
+Roast Dating - Estadísticas de Tinder (en español)
+Enlace --> https://roast.dating/es/blog/estadisticas-de-tinder
+
+Medium - I Gave My Tinder Data to a Professional Data Analyst
+Enlace --> https://www.statista.com/chart/17017/reasons-for-dating-app-usage/
+
+Statista - Reasons for Dating App Usage
+Enlace --> https://www.statista.com/chart/20817/gsc-uk-dating-apps-usage-by-relationship-status/
+
+Statista - UK Dating Apps Usage by Relationship Status
+Enlace --> https://www.statista.com/chart/20817/gsc-uk-dating-apps-usage-by-relationship-status/
+
+Reddit - How Heterosexual Couples Met (Data Is Beautiful)
+Enlace --> https://www.reddit.com/r/dataisbeautiful/comments/18h7k9g/how_heterosexual_couples_met_oc/?rdt=46059
+
+Reddit - Despite Being Far More Selective, Women Still... (Data Is Beautiful)
+Enlace --> https://www.reddit.com/r/dataisbeautiful/comments/mbf6wg/oc_despite_being_far_more_selective_women_still/
+
+Figshare - Características Sociodemográficas de Usuarios de Tinder
+Enlace -->  https://figshare.com/articles/dataset/DATASET_Caracter_sticas_sociodemogr_ficas_de_usuarios_de_Tinder/14658825
+
+Enterprise Apps Today - Tinder Statistics
+Enlace --> https://www.enterpriseappstoday.com/stats/tinder-statistics.html
+
+Kaggle - Dating Apps Datasets Search
+Enlace -->https://www.kaggle.com/search?q=dating+apps+in%3Adatasets
+
+Informe del Pew Research Center sobre Aplicaciones de Citas
+Enlace --> https://www.pewresearch.org/short-reads/2023/02/02/key-findings-about-online-dating-in-the-u-s/
