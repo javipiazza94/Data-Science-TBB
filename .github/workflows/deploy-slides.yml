@@ -1,0 +1,60 @@
+# GitHub Actions — Deploy Slides to GitHub Pages
+#
+# INSTRUCCIONES DE INSTALACIÓN:
+# 1. Copia este archivo a tu repo Data-Science-TBB como:
+#    .github/workflows/deploy-slides.yml
+#
+# 2. Activa GitHub Pages en tu repo:
+#    Settings → Pages → Source: "GitHub Actions"
+#
+# 3. Haz un push a master. Las slides se publicarán en:
+#    https://javipiazza94.github.io/Data-Science-TBB/
+#
+# ─────────────────────────────────────────────────────────
+
+name: Deploy Slides
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'slides/**'
+  workflow_dispatch:   # también se puede lanzar manualmente
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Prepare slides folder
+        run: |
+          mkdir -p _site
+          # Copia el HTML bundled como página principal
+          cp slides/Data-Science-IA.bundle.html _site/index.html
+          # Si quieres también la versión con assets separados:
+          cp -r slides _site/slides 2>/dev/null || true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
